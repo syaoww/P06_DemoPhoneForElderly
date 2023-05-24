@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button callSon;
+    Button callDaughter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
         callSon = findViewById(R.id.buttonCallSon);
         callSon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel :"+12345678));
+                startActivity(intentCall); }
+        });
+
+        callDaughter = findViewById(R.id.buttonCallDaughter);
+        callDaughter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel :"+12345678));

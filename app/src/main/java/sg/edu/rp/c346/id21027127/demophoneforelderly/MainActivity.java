@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         callSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel :"+12345678));
+                // idk what to change the view to
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel :"+92240336));
                 startActivity(intentCall); }
         });
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         callDaughter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel :"+12345678));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel :"+89675543));
                 startActivity(intentCall); }
         });
     }
